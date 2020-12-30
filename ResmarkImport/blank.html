@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<script>
+
+    var token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvZ2hlLmRlb2tvcm9AaXNsYW5kcm91dGVzLmNvbSIsImZpcnN0TmFtZSI6IlJvZ2hlIiwibGFzdE5hbWUiOiJEZU9rb3JvIiwiYWNjZXNzIjp7InN1cHBvcnQiOmZhbHNlLCJyZXBseVRvIjoicm9naGUuZGVva29yb0Bpc2xhbmRyb3V0ZXMuY29tIiwicGVybWlzc2lvbnMiOnsiY3JlYXRlT3JkZXJzIjp0cnVlLCJtYW5hZ2VQcmljaW5nT25PcmRlcnMiOnRydWUsIm1hbmFnZUN1c3RvbURpc2NvdW50c09uT3JkZXJzIjp0cnVlLCJjcmVhdGVQcm9kdWN0cyI6dHJ1ZSwibWFuYWdlQ29ubmVjdGlvbnMiOnRydWUsInZpZXdNeVJlcG9ydHMiOnRydWUsInZpZXdPdGhlclVzZXJSZXBvcnRzIjp0cnVlLCJ2aWV3U2FsZXNCeURheVJlcG9ydHMiOnRydWUsInZpZXdTYWxlc0J5UHJvZHVjdFJlcG9ydHMiOnRydWUsInZpZXdTYWxlc0J5VXNlclJlcG9ydHMiOnRydWUsInZpZXdDYXNoUmVwb3J0cyI6dHJ1ZSwidmlld1BheW1lbnRTdW1tYXJ5UmVwb3J0cyI6dHJ1ZSwidmlld1BheW1lbnRPdmVyZHVlUmVwb3J0cyI6dHJ1ZSwidmlld1JlZnVuZE93ZWRSZXBvcnRzIjp0cnVlLCJ2aWV3T3JkZXJEZXRhaWxTdGFydERhdGUiOnRydWUsInZpZXdPcmRlckRldGFpbFRyYW5zYWN0aW9uRGF0ZSI6dHJ1ZSwidmlld1Byb2R1Y3RNYW5pZmVzdFJlcG9ydHMiOnRydWUsIm1hbmFnZU1hcmtldGluZyI6dHJ1ZSwiZWRpdEJ1c2luZXNzU2V0dGluZ3MiOnRydWUsImVkaXRCcmFuZFNldHRpbmdzIjp0cnVlLCJlZGl0Q29uZmlybWF0aW9uU2V0dGluZ3MiOnRydWUsImVkaXRQYXltZW50U2V0dGluZ3MiOmZhbHNlLCJlZGl0U3Vic2NyaXB0aW9uU2V0dGluZ3MiOmZhbHNlLCJlZGl0VXNlcnNTZXR0aW5ncyI6dHJ1ZSwiZWRpdENhbmNlbGxhdGlvbkZlZXMiOnRydWUsImVkaXRTYWxlc0NoYW5uZWxzTGFiZWxzIjp0cnVlLCJhbGxvd0FwaUFjY2VzcyI6dHJ1ZSwibWFuYWdlUGF5YWJsZUFuZFJlY2VpdmFibGUiOnRydWUsImFsbG93SW52b2ljZU5vdGlmaWNhdGlvbnMiOmZhbHNlLCJjcmVhdGVSZXNlbGxlck9yZGVycyI6dHJ1ZSwiY3JlYXRlU3RhbmRhcmRPcmRlcnMiOnRydWUsImF1dG9tYXRlZE1lc3NhZ2VzIjp0cnVlLCJjdXN0b21SZXBvcnRzIjpbeyJfaWQiOiI1ZGMzMzVjYmMyMWNlMjAwMTI1ZWVkYWQiLCJpZCI6IjViODcwMjBkMmYyMmQ0MjVhNzlmMWM2NiIsInBlcm1pc3Npb24iOmZhbHNlfSx7Il9pZCI6IjVkYzMzNWNiYzIxY2UyMDAxMjVlZWRhYyIsImlkIjoiNWI5MTg0ZDQ3ZTEzOTMyNWJhM2JiNjM3IiwicGVybWlzc2lvbiI6ZmFsc2V9XSwiYWxsb3dCaWxsaW5nTm90aWZpY2F0aW9ucyI6ZmFsc2UsInZpZXdOZXRSYXRlRm9yU3VwcGxpZXJzIjpmYWxzZSwidmlld05ldFJhdGVGb3JSZXNlbGxlcnMiOmZhbHNlLCJ2aWV3Q29tbWlzc2lvbkZvclN1cHBsaWVycyI6ZmFsc2UsInZpZXdDb21taXNzaW9uRm9yUmVzZWxsZXJzIjpmYWxzZSwidmlld01haWxpbmdMaXN0UmVwb3J0cyI6ZmFsc2UsImFsbG93Q29ubmVjdGlvbk5vdGlmaWNhdGlvbnMiOmZhbHNlLCJ2aWV3V2FpdmVyU2lnbkRvY3VtZW50cyI6dHJ1ZSwiY3JlYXRlV2FpdmVyU2lnbkRvY3VtZW50cyI6dHJ1ZSwidmlld1BpY2t1cEFuZFRyYW5zZmVyUmVwb3J0cyI6dHJ1ZSwidmlld1NhbGVzQnlPcmRlclJlcG9ydHMiOnRydWV9fSwiZW50aXR5IjoiNTdjNjBhNjIyYTAyYTcyOTNjOTJkZGM5IiwiZW50aXR5TmFtZSI6IklzbGFuZCBSb3V0ZXMiLCJpYXQiOjE1NzMwNzU3MDIsImV4cCI6MTU3MzE2MjEwMn0.1vOsJP5S6B6BFiDPQDjuDA7dBZOVukcsZFeLuZc6n40";
+    function auth() {
+        // alert();
+        var xhttp = new XMLHttpRequest();
+        var username = "roghe.deokoro@islandroutes.com";
+        var apikey = "48a1b104-1dc8-4ab6-8564-b7e262c03d2d";
+        // alert();
+        xhttp.onreadystatechange = function () {
+           // console.log(xhttp.responseText);
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+               // alert(xhttp.responseText);
+                console.log(xhttp.responseText);
+                token = xhttp.responseText;
+                get_product("588a65d9621edaec1a1b70d6");
+
+            } else {
+               // console.log("error: " + xhttp.responseText);
+            }
+        };
+
+        var rnd = Math.random();
+       
+        var data = JSON.stringify({ "username": username, "apikey": apikey });
+        //console.log(data);
+        xhttp.open("POST", "https://sandbox.resmarksystems.com/public/api/authenticate", true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.send(data);
+    }
+
+    function get_product(id) {
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                // alert(xhttp.responseText);
+               console.log(xhttp.responseText);
+                //token = xhttp.responseText;
+
+            } else {
+                // console.log("error: " + xhttp.responseText);
+            }
+        };
+
+        var rnd = Math.random();
+        var data = JSON.stringify({ "limit": 20 });
+        xhttp.open("GET", "https://sandbox.resmarksystems.com/public/api/product/588a65d9621edaec1a1b70d6", true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        xhttp.setRequestHeader("Authorization", "Bearer " + token);
+        xhttp.send(data);
+    }
+
+</script>
+
+
+<body onload="auth();">
+
+</body>
+</html>
